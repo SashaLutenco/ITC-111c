@@ -1,0 +1,25 @@
+    .container {
+        background-color: rgb(228, 228, 228);
+        margin: 0 auto;
+        border-radius: 15px;
+        border: 1px #000 solid;
+        width: 20%;
+
+    }
+    #mainHeader {
+        background-color: #bebdbd;
+        text-align: center;
+        color: #1d1c1c;
+        padding: 10px;
+        
+    }
+    #formData {
+        margin: 0 auto;
+        text-align: center;
+        color: #1d1c1c;
+        padding: 10px;
+    }
+    .label {
+        text-emphasis: none;
+    }
+
