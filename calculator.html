@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main">
+<!-- Top most display -->
+        <div>
+            <p id="display1"></p>
+        </div>
+        <!--Main display-->
+        <div>
+            <input type="text" id="display2">
+        </div>
+        <!--Botton rows-->
+        <div class="row">
+            <button type="submit" name="sqrt" value="s" onclick="setOperator(this)">&radic;</button>
+            <button type="submit" name="power" value="p" onclick="setOperator(this)">x&sup2;</button>
+            <button type="submit" name="backspace" value="del" onclick="delFromRight()">⌫</button>
+            <button type="submit" name="devide" value="/" onclick="setOperator(this)">/</button>
+        </div>
+        <div class="row">
+            <button type="submit" name="seven" value="7" onclick="loadDisplay(this)">7</button>
+            <button type="submit" name="eight" value="8" onclick="loadDisplay(this)">8</button>
+            <button type="submit" name="nine" value="9" onclick="loadDisplay(this)">9</button>
+            <button type="submit" name="multiply" value="*" onclick="setOperator(this)">*</button>
+        </div>
+        <div class="row">
+            <button type="submit" name="four" value="4" onclick="loadDisplay(this)">4</button>
+            <button type="submit" name="five" value="5" onclick="loadDisplay(this)">5</button>
+            <button type="submit" name="six" value="6" onclick="loadDisplay(this)">6</button>
+            <button type="submit" name="minus" value="-" onclick="setOperator(this)">-</button>
+        </div>
+        <div class="row">
+            <button type="submit" name="one" value="1" onclick="loadDisplay(this)">1</button>
+            <button type="submit" name="two" value="2" onclick="loadDisplay(this)">2</button>
+            <button type="submit" name="three" value="3" onclick="loadDisplay(this)">3</button>
+            <button type="submit" name="addition" value="+" onclick="setOperator(this)">+</button>
+        </div>
+        <div class="row">
+            <button type="submit" name="clear" value="C" onclick="clearDisplay(this)">C</button>
+            <button type="submit" name="zero" value=")" onclick="loadDisplay(this)">0</button>
+            <button type="submit" name="point" value="." onclick="loadDisplay(this)">.</button>
+            <button type="submit" name="equals" value="=" onclick="doMath()">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
